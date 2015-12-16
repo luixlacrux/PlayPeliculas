@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta name="descripcion" content="Portal web para descargar peliculas en audio latino desde mega y otros servidores"/>
+	<meta charset="utf-8"/> 
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+	<title>PlayPeliculas</title>
+	<!--link href='http://fonts.googleapis.com/css?family=Permanent+Marker' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:600,400' rel='stylesheet' type='text/css'-->
+	<link rel="shortcut icon" type="image/x-icon" href="../static/img/icon_play.png">
+	<link rel="stylesheet" href="../static/css/normalize.css"/>
+	<link rel="stylesheet" href="../static/css/style.css"/>
+	<link rel="stylesheet" href="../static/css/jquery.mCustomScrollbar.css"/>
+	
+	
+</head>
+<body>
+	<div class="u-bodyOpacity"></div>
+	<header class="Header">
+		<div class="Header-Contenedor">
+			<a href="#" class="Header-contenTitulo">
+				<figure class="Header-logoContenedor">
+					<img class="Header-logo"src="../static/img/icon_play.png"></img>
+				</figure>
+				<h1 class="Header-titulo">PlayPeliculas</h1>
+			</a>
+			<nav class="Menu">
+				<ul class="Menu-lista">
+					<li class="Menu-item"><a class="Menu-link"href="index.html">Inicio</a></li>
+					<li class="Menu-item"><a class="Menu-link"href="#">Peliculas</a></li>
+					<li class="Menu-item"><a class="Menu-link"href="#">Series</a></li>
+					<li class="Menu-item"><a class="Menu-link"href="#">Animes</a></li>
+					<li class="Menu-item"><a class="Menu-link"href="#">Otros</a></li>
+				</ul>
+			</nav>
+        	<div class="MenuMobile">
+        		<a href="#" class="botonMenu icon-menu"></a>
+        	</div>
+
+        	<a href="#" class="botonBuscar icon-search"></a>
+        	<div class="accordion-content">
+        		<form class="Busqueda">
+	            	<div class="Busqueda-barra">
+	            		<input class="Busqueda-formInputText" type="search" name="buscar" placeholder="Buscar..." autocomplete="off"/>
+	            		<button class="Busqueda-formBoton"id="boton-buscar" type="submit">
+	               		<span class="icon-search"></span>
+	            		</button>
+	            	</div>
+	        		<div class="Conten-selectores">
+
+                		<select class="Conten-selec">
+                    		<option>Año</option>
+                    		<option>2013</option>
+                    		<option>2014</option>
+                    		<option>2015</option>
+						</select>
+						<select class="Conten-selec">
+                    		<option>Genero</option>
+                    		<option>Comedia</option>
+                    		<option>Accion</option>
+						</select>
+						<select class="Conten-selec">
+							<option>Calidad</option>
+							<option>Blue-ray</option>
+							<option>1080p</option>
+							<option>720p</option>
+						</select>
+					</div>
+            	</form>
+            	                
+            </div>  
+       	</div>
+	</header>
+
+	<fieldset class="Cartelera">
+		<legend><span>Cartelera</span></legend>
+		<div class='form_container '>
+			<div class="slideContainer">
+				<div class="slide">
+					<a href="#" class="Cartelera-items" style='text-decoration:underline;'>
+						<img src="../static/img/vacaciones.jpg" alt="imagen" title="CopCar">
+					</a>
+					<a href="#" class="Cartelera-items" style='text-decoration:underline;'>
+						<img src="../static/img/cazador.jpg" alt="imagen" title="CopCar">
+					</a>
+					<a href="#" class="Cartelera-items" style='text-decoration:underline;'>
+						<img src="../static/img/ted2.jpg" alt="imagen" title="CopCar">
+					</a>
+					<a href="#" class="Cartelera-items" style='text-decoration:underline;'>
+						<img src="../static/img/air.jpg" alt="imagen" title="CopCar">
+					</a>
+					<a href="#" class="Cartelera-items" style='text-decoration:underline;'>
+						<img src="../static/img/madmax.jpg" alt="imagen" title="CopCar">
+					</a>
+					<a href="#" class="Cartelera-items" style='text-decoration:underline;'>
+						<img src="../static/img/tracers.jpg" alt="imagen" title="CopCar">
+					</a>
+					<a href="#" class="Cartelera-items" style='text-decoration:underline;'>
+						<img src="../static/img/ted2.jpg" alt="imagen" title="CopCar">
+					</a>
+					<a href="#" class="Cartelera-items" style='text-decoration:underline;'>
+						<img src="../static/img/air.jpg" alt="imagen" title="CopCar">
+					</a>
+				</div>
+			
+			</div>
+			
+		</div>
+		<button class="direccion left"> &#60; </button>
+		<button class="direccion right">&#62;</button>
+	</fieldset>
+
+	<section class="ContenPrincipal">
+
+        <aside class="Conten-vertical">
+            <div class="Conten-listaGeneros">
+                <p class="ListaGeneros-titulo">Generos</p>
+                <ul class="ListaGeneros"> 
+                    <li><a href="#" class="ListaGeneros-opcion">Genero<span>1956565</span></a></li>
+                    <li><a href="#" class="ListaGeneros-opcion">Genero<span>1</span></a></li>
+                    <li><a href="#" class="ListaGeneros-opcion">Genero<span>1</span></a></li>
+                    <li><a href="#" class="ListaGeneros-opcion">Genero<span>1</span></a></li>
+                    <li><a href="#" class="ListaGeneros-opcion">Genero<span>1</span></a></li>
+                    <li><a href="#" class="ListaGeneros-opcion">Genero<span>1</span></a></li>
+                    <li><a href="#" class="ListaGeneros-opcion">Genero<span>1</span></a></li>
+                    <li><a href="#" class="ListaGeneros-opcion">Genero<span>1</span></a></li>
+                    <li><a href="#" class="ListaGeneros-opcion">Genero<span>1</span></a></li>
+                    <li><a href="#" class="ListaGeneros-opcion">Genero<span>1</span></a></li>
+                    <li><a href="#" class="ListaGeneros-opcion">Genero<span>1</span></a></li>
+                    <li><a href="#" class="ListaGeneros-opcion">Genero<span>1</span></a></li>
+                    <li><a href="#" class="ListaGeneros-opcion">Genero<span>1</span></a></li>
+                    <li><a href="#" class="ListaGeneros-opcion">Genero<span>1</span></a></li>
+                    <li><a href="#" class="ListaGeneros-opcion">Genero<span>1</span></a></li>
+                    <li><a href="#" class="ListaGeneros-opcion">Genero<span>1</span></a></li>
+                    <li><a href="#" class="ListaGeneros-opcion">Genero<span>1</span></a></li>
+                    <li><a href="#" class="ListaGeneros-opcion">Genero<span>1</span></a></li>
+                    <li><a href="#" class="ListaGeneros-opcion">Genero<span>1</span></a></li>
+                    <li><a href="#" class="ListaGeneros-opcion">Genero<span>1</span></a></li>
+                    <li><a href="#" class="ListaGeneros-opcion">Genero<span>1</span></a></li>
+                    <li><a href="#" class="ListaGeneros-opcion">Genero<span>1</span></a></li>
+                </ul>
+            </div>
+		</aside>
+		
+		<section class="Peliculas-contenPrincipal">
+			<section class="Descripcion">
+            <div class="Conten-descripcion">
+                <h2 class="Descripcion-titulo">Cop Car <span class="Descripcion-btCerrar icon-cross-2"></span></h2>
+                <div class="div">
+                    <figure class="Conten-imagePelicula">
+                        <img src="../static/img/copcar.jpg" alt="">
+                        <div class="puntuacion">
+                            <span class="icon-cross-2"></span>
+                            <span class="icon-cross-2"></span>
+                            <span class="icon-cross-2"></span>
+                            <span class="icon-cross-2"></span>
+                            <span class="icon-cross-2"></span>
+                        </div>
+                    </figure>
+                    <div class="botones-contenedor">
+                        <a href="#" class="boton-genero">Accion</a>
+                        <a href="#" class="boton-genero">Comedia</a>
+                        <a href="#" class="boton-genero">Crimen</a>
+                    </div>
+                </div>
+                <div class="datos">
+                    <div class="datos-pelicula">
+                        <h4>Datos de la pelicula </h4>
+                        <strong>Directores:</strong> Paul Feig<br/>
+                        <strong>Escritores:</strong> Paul Feig<br/>
+                        <strong>Reparto:</strong> Jude Law, Raad Rawi, Melissa McCarthy, Jessica Chaffin, Miranda Hart, Sam Richardson, Katie Dippold, Jaime Pacheco, Romain Apelbaum, Rose Byrne, Richard Brake, Steve Bannos, Morena Baccarin, Jason Statham, Carlos Ponce
+                    </div>
+
+                    <div class="datos-pelicula">
+                        <h4>Sinopsis</h4>
+                        Susan Cooper (Melissa McCarthy) es una modesta y sedentaria analista de la CIA y la heroína olvidada de las misiones más peligrosas de la agencia. Pero cuando su compañero (Jude Law) desaparece de la faz de la Tierra y otro agente (Jason Statham) se ve envuelto en problemas, Susan se presenta voluntaria como agente secreto para emprender una misión encubierta en la que se tendrá que infiltrar en el mundo de un sanguinario traficante de armas para evitar un desastre mundial.                    
+                    </div>
+
+                    <div class="datos-pelicula">
+                        <h4>Datos Tecnicos</h4>
+                        <strong>Calidad:</strong> WebRip<br/>
+                        <strong>Audio:</strong> Español Latino<br/>
+                        <strong>Tamaño:</strong> 690 Megas<br/>
+                        <strong>Duración:</strong> 1 hora con 54 Minutos y 18 Segundos <br/>
+                        <strong>Audio:</strong> mp3<br/>
+                        <strong>Resolución:</strong> 640 x 272<br/>
+                        <strong>Formato:</strong> AVI<br/>                    
+                    </div>
+
+                </div>
+            </aside>
+            <div class="ContenPrincipal-enlaces Conten-trailer">
+                <h4 class="Conten-enlacesTitulo">Enlaces</h4>
+                    <a href="#" class="link">Opcion 1</a>
+                    <a href="#" class="link">Opcion 2</a>
+                    <a href="#" class="link">Opcion 3</a>
+                    <a href="#" class="link">Opcion 4</a>
+                </div>
+            </div>
+
+            
+        </div> 
+			</section>
+			<article class="Peliculas-articulo">
+				<a href="#" class="Pelicula-item">
+					<div class="Pelicula-conten">
+						<div class="Peliculas-contenAno">2015</div>
+						<div class="Peliculas-contenCalidad">Blue-ray</div>						
+						<figure class="Peliculas-imgConten">
+				 			<img class="Peliculas-img" height="310" src="../static/img/madmax.jpg"></img>
+				 		</figure>
+				 	</div>
+				 	<div class="Peliculas-contenTitulo"><a href="#" class="Peliculas-Titulo">LA PIRAMIDE</a></div>
+			 	</a>
+			 	<div class="Peliculas-minDescripcion">
+			 		<a href="#" class="minDescrip-link">La Piramide</a>
+			 		<p>La pelicula sigue a un equipo de arqueólogos estadounidenses que descubren una antigua pirámide en medio del desierto egipcio. Se adentran en ella y al poco tiempo se encontrarán perdidos en sus oscuras catacumbas que parecen no tener fin.</p>
+			 	</div>
+			 </article>
+			 <article class="Peliculas-articulo">
+				<a href="#" class="Pelicula-item">
+					<div class="Pelicula-conten">
+						<div class="Peliculas-contenAno">2015</div>
+						<div class="Peliculas-contenCalidad">Blue-ray</div>						
+						<figure class="Peliculas-imgConten">
+				 			<img class="Peliculas-img" height="310" src="../static/img/tracers.jpg"></img>
+				 		</figure>
+				 	</div>
+				 	<div class="Peliculas-contenTitulo"><a href="#" class="Peliculas-Titulo">LA PIRAMIDE</a></div>
+			 	</a>
+			 	<div class="Peliculas-minDescripcion">
+			 		<a href="#" class="minDescrip-link">La Piramide</a>
+			 		<p>La pelicula sigue a un equipo de arqueólogos estadounidenses que descubren una antigua pirámide en medio del desierto egipcio. Se adentran en ella y al poco tiempo se encontrarán perdidos en sus oscuras catacumbas que parecen no tener fin.</p>
+			 	</div>
+			 </article>
+		</section>
+
+
+	</section>
+
+	<footer class="PiePagina">
+		<div class="PiePagina-principal">
+			<div class="Social">
+				<h4 class="Social-titulo">Siguenos</h4>
+				<ul class="Social-contenIcon">
+					<li><a href="http://www.youtube.com/" target="_blank" class="Social-icon "><span class="icon-youtube2"></span></a></li>
+					<li><a href="https://facebook.com/" target="_blank" class="Social-icon "><span class="icon-facebook2"></span></a></li>
+					<li><a href="http://www.twitter.com/" target="_blank" class="Social-icon "><span class="icon-twitter2"></span></a></li>
+					<li><a href="https://plus.google.com/" target="_blank" class="Social-icon "><span class="icon-google-plus2"></span></a></li>
+				</ul>
+			</div>
+			<h4 class="PiePagina-letra">&copy <a href="#" class="PiePagina-link">PlayPeliculas 2015.</a> Todos Los Derechos Reservados </h4>
+		</div>
+	</footer>
+	<script src="../static/js/vendors/jquery.min.js"></script> 
+	<script src="../static/js/vendors/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src="../static/js/script.js"></script>
+	<script src="../static/js/slide2.js"></script>
+</body>
+</html>

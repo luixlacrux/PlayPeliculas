@@ -1,0 +1,6 @@
+{
+	"scripts":{
+		"stylus": "stylus -c -w ./static/css/style.styl",
+		"server": "http-server ." 
+	}
+}
