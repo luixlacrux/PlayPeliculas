@@ -33,26 +33,37 @@ function main () {
 	}
 
 	//Mostrar y Ocultar Menu Mobile
-	var contador = true;
-	$('.botonMenu').on('click',function(ev){
-		ev.preventDefault();
+	
+		var $buttonShowMenu = $("#show-menu");
+		var $buttonHideMenu = $("#hide-menu");
+		var $menu = $(".Menu");
 
-		if (contador) {
-			$(this).addClass("icon-menuActivo");
-			$('.Menu').animate({
-				left: '0',
-			});
-			contador = false;
+		if (window.matchMedia("(max-width : 700px)").matches){
 
-		} else {
-			contador = true;
-			$(this).removeClass("icon-menuActivo")
-			$('.Menu').animate({
-				left: '-100%'
-			});
+			var $body = document.querySelector('body')
+			var body = new Hammer($body);
+
+			body.on('panright', showMenu)
+			body.on('panleft', hideMenu)
+
 		}
 
-	});
+		function showMenu(){
+			$buttonShowMenu.removeClass('is-active')
+			$buttonHideMenu.addClass('is-active')
+			$menu.addClass('is-active'); 
+		}
+
+		function hideMenu(){
+			$buttonShowMenu.addClass('is-active')
+			$buttonHideMenu.removeClass('is-active')
+			$menu.removeClass('is-active');
+		}
+
+		$buttonShowMenu.on("click", showMenu);
+		$buttonHideMenu.on("click", hideMenu);
+		
+
 
 	//BarraBuscar Mobile
 	$(".botonBuscar").on('click',function(ev){

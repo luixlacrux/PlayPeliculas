@@ -7,6 +7,7 @@ azulClaro = #459FFF
 /*turquesa = #A8C545*/
 grisClaro = #DFD3B6
 
+@import "normalize.styl"
 @import "styleIcon.styl"
 
 body
@@ -164,19 +165,27 @@ body
 			display none
 			position relative
 			
+			#hide-menu
+				color #cc4839
 			.botonMenu 
-				display block
+				display none
 				color blanco
 				font-size 30px
 				padding .4em .2em 
 				position relative
-				text-decoration none
+				background none
+				border none
 				top -3px
+				&.is-active
+					display block
 			
 		/* Menu Principal*/
 							
 		.Menu 
 			float right
+			transition 500ms
+			&.is-active
+				left 0
 			
 			.Menu-lista 
 				list-style none
@@ -562,6 +571,15 @@ body
 		margin 0
 		padding 0
 		
+		.Peliculas-articulo-sin-hover
+			background #5490bd
+			border-radius .2em
+			border 2px negroClaro solid		
+			display inline-block
+			margin .5%
+			position: relative
+			width 22.5%
+			
 		
 		.Peliculas-articulo
 			background #5490bd

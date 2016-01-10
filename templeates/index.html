@@ -7,7 +7,6 @@
 	<title>PlayPeliculas</title>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:600,400' rel='stylesheet' type='text/css'>
 	<link rel="shortcut icon" type="image/x-icon" href="../static/img/icon_play.png">
-	<link rel="stylesheet" href="../static/css/normalize.css"/>
 	<link rel="stylesheet" href="../static/css/style.css"/>
 </head>
 <body>
@@ -30,7 +29,8 @@
 				</ul>
 			</nav>
         	<div class="MenuMobile">
-        		<a href="#" class="botonMenu icon-menu"></a>
+        		<button class="botonMenu icon-menu is-active" id="show-menu"></button>
+        		<button class="botonMenu icon-menu" id="hide-menu"></button>
         	</div>
 
         	<a href="#" class="botonBuscar icon-search"></a>
@@ -292,7 +292,8 @@
 		</div>
 	</footer>
 	<script src="../static/js/vendors/jquery.min.js"></script>
-	<script src="../static/js/script.js"></script>
+	<script src="../static/js/vendors/hammer.min.js"></script>
+	<script src="../static/js/script.js?v=1.0"></script>
 	<script src="../static/js/slide.js"></script>
 </body>
 </html>
